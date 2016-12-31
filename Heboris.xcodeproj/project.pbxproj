@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002F39FA09D0881F00EBEB88 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F39F909D0881F00EBEB88 /* SDL.framework */; };
+		002F3A0009D0884600EBEB88 /* SDL.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 002F39F909D0881F00EBEB88 /* SDL.framework */; };
+		002F3A2E09D0888800EBEB88 /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F3A2C09D0888800EBEB88 /* SDLMain.m */; };
+		615787250CF4891D00F70104 /* SDL_kanji.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 615787240CF4891D00F70104 /* SDL_kanji.h */; };
+		616833C20CF5E8E800935B2F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616833BE0CF5E8DE00935B2F /* OpenGL.framework */; };
+		616833C40CF5E90300935B2F /* opengl_utils.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 616833C30CF5E90300935B2F /* opengl_utils.h */; };
+		616833C60CF5E90A00935B2F /* opengl_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 616833C50CF5E90A00935B2F /* opengl_utils.cpp */; };
+		616833CA0CF5E94400935B2F /* SDL_kanji.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 616833C90CF5E94400935B2F /* SDL_kanji.cpp */; };
+		61B09B3A0CF0BC6A004917E9 /* inireader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61B09B380CF0BC6A004917E9 /* inireader.cpp */; };
+		61B09B3B0CF0BC6A004917E9 /* inireader.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 61B09B390CF0BC6A004917E9 /* inireader.h */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		CB5D60950AA750CD003C65A7 /* SDL_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5D60930AA750CD003C65A7 /* SDL_image.framework */; };
+		CB5D60960AA750CD003C65A7 /* SDL_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5D60940AA750CD003C65A7 /* SDL_mixer.framework */; };
+		CB5D609F0AA75115003C65A7 /* SDL_image.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = CB5D60930AA750CD003C65A7 /* SDL_image.framework */; };
+		CB5D60A00AA75115003C65A7 /* SDL_mixer.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = CB5D60940AA750CD003C65A7 /* SDL_mixer.framework */; };
+		CB8190E00AAB51C20095CB21 /* gamestart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB8190BA0AAB51C20095CB21 /* gamestart.cpp */; };
+		CB8190E80AAB51C20095CB21 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB8190C30AAB51C20095CB21 /* main.cpp */; };
+		CB8190EB0AAB51C20095CB21 /* ygs2kfunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB8190C60AAB51C20095CB21 /* ygs2kfunc.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		002F39FD09D0883400EBEB88 /* Copy Frameworks into .app bundle */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				002F3A0009D0884600EBEB88 /* SDL.framework in Copy Frameworks into .app bundle */,
+				CB5D609F0AA75115003C65A7 /* SDL_image.framework in Copy Frameworks into .app bundle */,
+				CB5D60A00AA75115003C65A7 /* SDL_mixer.framework in Copy Frameworks into .app bundle */,
+				61B09B3B0CF0BC6A004917E9 /* inireader.h in Copy Frameworks into .app bundle */,
+				615787250CF4891D00F70104 /* SDL_kanji.h in Copy Frameworks into .app bundle */,
+				616833C40CF5E90300935B2F /* opengl_utils.h in Copy Frameworks into .app bundle */,
+			);
+			name = "Copy Frameworks into .app bundle";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		002F39F909D0881F00EBEB88 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = /Library/Frameworks/SDL.framework; sourceTree = "<absolute>"; };
+		002F3A2B09D0888800EBEB88 /* SDLMain.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SDLMain.h; sourceTree = SOURCE_ROOT; };
+		002F3A2C09D0888800EBEB88 /* SDLMain.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SDLMain.m; sourceTree = SOURCE_ROOT; };
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* Heboris_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Heboris_Prefix.pch; sourceTree = "<group>"; };
+		615787240CF4891D00F70104 /* SDL_kanji.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = SDL_kanji.h; sourceTree = "<group>"; };
+		616833BE0CF5E8DE00935B2F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		616833C30CF5E90300935B2F /* opengl_utils.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = opengl_utils.h; sourceTree = "<group>"; };
+		616833C50CF5E90A00935B2F /* opengl_utils.cpp */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.cpp.cpp; path = opengl_utils.cpp; sourceTree = "<group>"; };
+		616833C90CF5E94400935B2F /* SDL_kanji.cpp */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.cpp.cpp; path = SDL_kanji.cpp; sourceTree = "<group>"; };
+		61B09B380CF0BC6A004917E9 /* inireader.cpp */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.cpp.cpp; path = inireader.cpp; sourceTree = "<group>"; };
+		61B09B390CF0BC6A004917E9 /* inireader.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = inireader.h; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Heboris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Heboris.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB5D60930AA750CD003C65A7 /* SDL_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_image.framework; path = /Library/Frameworks/SDL_image.framework; sourceTree = "<absolute>"; };
+		CB5D60940AA750CD003C65A7 /* SDL_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_mixer.framework; path = /Library/Frameworks/SDL_mixer.framework; sourceTree = "<absolute>"; };
+		CB8190B90AAB51C20095CB21 /* gamedef.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = gamedef.h; sourceTree = "<group>"; };
+		CB8190BA0AAB51C20095CB21 /* gamestart.cpp */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.cpp.cpp; path = gamestart.cpp; sourceTree = "<group>"; };
+		CB8190BB0AAB51C20095CB21 /* gamestart.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = gamestart.h; sourceTree = "<group>"; };
+		CB8190BC0AAB51C20095CB21 /* heboris.ini */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = text; path = heboris.ini; sourceTree = "<group>"; };
+		CB8190BD0AAB51C20095CB21 /* heboris_user.ini */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = text; path = heboris_user.ini; sourceTree = "<group>"; };
+		CB8190BE0AAB51C20095CB21 /* prototypes.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = prototypes.h; sourceTree = "<group>"; };
+		CB8190BF0AAB51C20095CB21 /* speed.def */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = text; path = speed.def; sourceTree = "<group>"; };
+		CB8190C10AAB51C20095CB21 /* include.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = include.h; sourceTree = "<group>"; };
+		CB8190C20AAB51C20095CB21 /* keyconf.def */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = text; path = keyconf.def; sourceTree = "<group>"; };
+		CB8190C30AAB51C20095CB21 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CB8190C40AAB51C20095CB21 /* main.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		CB8190C50AAB51C20095CB21 /* option.def */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = text; path = option.def; sourceTree = "<group>"; };
+		CB8190C60AAB51C20095CB21 /* ygs2kfunc.cpp */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.cpp.cpp; path = ygs2kfunc.cpp; sourceTree = "<group>"; };
+		CB8190C70AAB51C20095CB21 /* ygs2kfunc.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = ygs2kfunc.h; sourceTree = "<group>"; };
+		CB8190C90AAB51C20095CB21 /* ars.c */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.c; path = ars.c; sourceTree = "<group>"; };
+		CB8190CA0AAB51C20095CB21 /* changelog.txt */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = text; path = changelog.txt; sourceTree = "<group>"; };
+		CB8190CB0AAB51C20095CB21 /* classic.c */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.c; path = classic.c; sourceTree = "<group>"; };
+		CB8190CC0AAB51C20095CB21 /* config.c */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.c; path = config.c; sourceTree = "<group>"; };
+		CB8190CD0AAB51C20095CB21 /* cpu.c */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.c; path = cpu.c; sourceTree = "<group>"; };
+		CB8190CE0AAB51C20095CB21 /* cpu_tbl.txt */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = text; path = cpu_tbl.txt; sourceTree = "<group>"; };
+		CB8190CF0AAB51C20095CB21 /* effect.c */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.c; path = effect.c; sourceTree = "<group>"; };
+		CB8190D00AAB51C20095CB21 /* flexdraw.c */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.c; path = flexdraw.c; sourceTree = "<group>"; };
+		CB8190D10AAB51C20095CB21 /* gameinit.c */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.c; path = gameinit.c; sourceTree = "<group>"; };
+		CB8190D20AAB51C20095CB21 /* mission.c */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.c; path = mission.c; sourceTree = "<group>"; };
+		CB8190D30AAB51C20095CB21 /* planes.txt */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = text; path = planes.txt; sourceTree = "<group>"; };
+		CB8190D40AAB51C20095CB21 /* practice.c */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.c; path = practice.c; sourceTree = "<group>"; };
+		CB8190D50AAB51C20095CB21 /* ranking.c */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.c; path = ranking.c; sourceTree = "<group>"; };
+		CB8190D60AAB51C20095CB21 /* readdef.c */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.c; path = readdef.c; sourceTree = "<group>"; };
+		CB8190D70AAB51C20095CB21 /* replay.c */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.c; path = replay.c; sourceTree = "<group>"; };
+		CB8190D80AAB51C20095CB21 /* scriptlist.txt */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = text; path = scriptlist.txt; sourceTree = "<group>"; };
+		CB8190D90AAB51C20095CB21 /* sectime.c */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.c; path = sectime.c; sourceTree = "<group>"; };
+		CB8190DA0AAB51C20095CB21 /* sound.c */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.c; path = sound.c; sourceTree = "<group>"; };
+		CB8190DB0AAB51C20095CB21 /* staffroll.c */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.c; path = staffroll.c; sourceTree = "<group>"; };
+		CB8190DC0AAB51C20095CB21 /* tomoyo.c */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.c; path = tomoyo.c; sourceTree = "<group>"; };
+		CB8190DD0AAB51C20095CB21 /* view.c */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.c; path = view.c; sourceTree = "<group>"; };
+		CB8190DE0AAB51C20095CB21 /* world.c */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.c; path = world.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002F39FA09D0881F00EBEB88 /* SDL.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				CB5D60950AA750CD003C65A7 /* SDL_image.framework in Frameworks */,
+				CB5D60960AA750CD003C65A7 /* SDL_mixer.framework in Frameworks */,
+				616833C20CF5E8E800935B2F /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				002F3A2B09D0888800EBEB88 /* SDLMain.h */,
+				002F3A2C09D0888800EBEB88 /* SDLMain.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				616833BE0CF5E8DE00935B2F /* OpenGL.framework */,
+				CB5D60930AA750CD003C65A7 /* SDL_image.framework */,
+				CB5D60940AA750CD003C65A7 /* SDL_mixer.framework */,
+				002F39F909D0881F00EBEB88 /* SDL.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Heboris.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Heboris */ = {
+			isa = PBXGroup;
+			children = (
+				CB8190B70AAB51C20095CB21 /* src */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = Heboris;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Heboris_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB8190B70AAB51C20095CB21 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				CB8190B80AAB51C20095CB21 /* game */,
+				CB8190C00AAB51C20095CB21 /* main_sdl */,
+				CB8190C80AAB51C20095CB21 /* script */,
+			);
+			fileEncoding = 0;
+			path = src;
+			sourceTree = "<group>";
+		};
+		CB8190B80AAB51C20095CB21 /* game */ = {
+			isa = PBXGroup;
+			children = (
+				61B09B380CF0BC6A004917E9 /* inireader.cpp */,
+				61B09B390CF0BC6A004917E9 /* inireader.h */,
+				CB8190B90AAB51C20095CB21 /* gamedef.h */,
+				CB8190BA0AAB51C20095CB21 /* gamestart.cpp */,
+				CB8190BB0AAB51C20095CB21 /* gamestart.h */,
+				CB8190BC0AAB51C20095CB21 /* heboris.ini */,
+				CB8190BD0AAB51C20095CB21 /* heboris_user.ini */,
+				CB8190BE0AAB51C20095CB21 /* prototypes.h */,
+				CB8190BF0AAB51C20095CB21 /* speed.def */,
+			);
+			path = game;
+			sourceTree = "<group>";
+		};
+		CB8190C00AAB51C20095CB21 /* main_sdl */ = {
+			isa = PBXGroup;
+			children = (
+				616833C50CF5E90A00935B2F /* opengl_utils.cpp */,
+				616833C30CF5E90300935B2F /* opengl_utils.h */,
+				615787240CF4891D00F70104 /* SDL_kanji.h */,
+				616833C90CF5E94400935B2F /* SDL_kanji.cpp */,
+				CB8190C10AAB51C20095CB21 /* include.h */,
+				CB8190C20AAB51C20095CB21 /* keyconf.def */,
+				CB8190C30AAB51C20095CB21 /* main.cpp */,
+				CB8190C40AAB51C20095CB21 /* main.h */,
+				CB8190C50AAB51C20095CB21 /* option.def */,
+				CB8190C60AAB51C20095CB21 /* ygs2kfunc.cpp */,
+				CB8190C70AAB51C20095CB21 /* ygs2kfunc.h */,
+			);
+			path = main_sdl;
+			sourceTree = "<group>";
+		};
+		CB8190C80AAB51C20095CB21 /* script */ = {
+			isa = PBXGroup;
+			children = (
+				CB8190C90AAB51C20095CB21 /* ars.c */,
+				CB8190CA0AAB51C20095CB21 /* changelog.txt */,
+				CB8190CB0AAB51C20095CB21 /* classic.c */,
+				CB8190CC0AAB51C20095CB21 /* config.c */,
+				CB8190CD0AAB51C20095CB21 /* cpu.c */,
+				CB8190CE0AAB51C20095CB21 /* cpu_tbl.txt */,
+				CB8190CF0AAB51C20095CB21 /* effect.c */,
+				CB8190D00AAB51C20095CB21 /* flexdraw.c */,
+				CB8190D10AAB51C20095CB21 /* gameinit.c */,
+				CB8190D20AAB51C20095CB21 /* mission.c */,
+				CB8190D30AAB51C20095CB21 /* planes.txt */,
+				CB8190D40AAB51C20095CB21 /* practice.c */,
+				CB8190D50AAB51C20095CB21 /* ranking.c */,
+				CB8190D60AAB51C20095CB21 /* readdef.c */,
+				CB8190D70AAB51C20095CB21 /* replay.c */,
+				CB8190D80AAB51C20095CB21 /* scriptlist.txt */,
+				CB8190D90AAB51C20095CB21 /* sectime.c */,
+				CB8190DA0AAB51C20095CB21 /* sound.c */,
+				CB8190DB0AAB51C20095CB21 /* staffroll.c */,
+				CB8190DC0AAB51C20095CB21 /* tomoyo.c */,
+				CB8190DD0AAB51C20095CB21 /* view.c */,
+				CB8190DE0AAB51C20095CB21 /* world.c */,
+			);
+			path = script;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* Heboris */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Heboris" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				002F39FD09D0883400EBEB88 /* Copy Frameworks into .app bundle */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Heboris;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Heboris;
+			productReference = 8D1107320486CEB800E47090 /* Heboris.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Heboris" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Heboris */;
+			projectDirPath = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Heboris */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002F3A2E09D0888800EBEB88 /* SDLMain.m in Sources */,
+				CB8190E00AAB51C20095CB21 /* gamestart.cpp in Sources */,
+				CB8190E80AAB51C20095CB21 /* main.cpp in Sources */,
+				CB8190EB0AAB51C20095CB21 /* ygs2kfunc.cpp in Sources */,
+				61B09B3A0CF0BC6A004917E9 /* inireader.cpp in Sources */,
+				616833C60CF5E90A00935B2F /* opengl_utils.cpp in Sources */,
+				616833CA0CF5E94400935B2F /* SDL_kanji.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		616833B00CF5E76000935B2F /* Release_OpenGL */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_TREAT_NONCONFORMANT_CODE_ERRORS_AS_WARNINGS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OBJROOT = "$(SYMROOT)";
+				PRODUCT_NAME = Heboris;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release_OpenGL;
+		};
+		616833B10CF5E76000935B2F /* Release_OpenGL */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks",
+					/Library/Frameworks,
+					"$(FRAMEWORK_SEARCH_PATHS)",
+				);
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					MACOSX,
+					"SDL_USE_OPENGL=1",
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks/SDL.framework/Headers",
+					/Library/Frameworks/SDL.framework/Headers,
+					"$(HOME)/Library/Frameworks/SDL_image.framework/Headers",
+					/Library/Frameworks/SDL_image.framework/Headers,
+					"$(HOME)/Library/Frameworks/SDL_mixer.framework/Headers",
+					/Library/Frameworks/SDL_mixer.framework/Headers,
+					src,
+					src/game,
+					src/main_sdl,
+					"$(HEADER_SEARCH_PATHS)",
+				);
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release_OpenGL;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_TREAT_NONCONFORMANT_CODE_ERRORS_AS_WARNINGS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OBJROOT = "$(SYMROOT)";
+				PRODUCT_NAME = Heboris;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks",
+					/Library/Frameworks,
+					"$(FRAMEWORK_SEARCH_PATHS)",
+				);
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = MACOSX;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks/SDL.framework/Headers",
+					/Library/Frameworks/SDL.framework/Headers,
+					"$(HOME)/Library/Frameworks/SDL_image.framework/Headers",
+					/Library/Frameworks/SDL_image.framework/Headers,
+					"$(HOME)/Library/Frameworks/SDL_mixer.framework/Headers",
+					/Library/Frameworks/SDL_mixer.framework/Headers,
+					src,
+					src/game,
+					src/main_sdl,
+					"$(HEADER_SEARCH_PATHS)",
+				);
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Heboris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4C08A954540054247B /* Release */,
+				616833B00CF5E76000935B2F /* Release_OpenGL */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Heboris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF5008A954540054247B /* Release */,
+				616833B10CF5E76000935B2F /* Release_OpenGL */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
