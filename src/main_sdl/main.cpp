@@ -1,18 +1,18 @@
 #include "include.h"
 #include "gamestart.h"
 
-bool PollEvent(); // ƒCƒxƒ“ƒgˆ—
+bool PollEvent(); // ÂƒCÂƒxÂƒÂ“ÂƒgÂÂˆÂ—Â
 
 int main(int argc, char* argv[])
 {
-	/* SDL‚Ì‰Šú‰» */
+	/* SDLÂ‚ÃŒÂÂ‰ÂŠÃºÂ‰Â» */
 	if ( SDL_Init(SDL_INIT_VIDEO | SDL_INIT_JOYSTICK) < 0 )
 	{
 		fprintf(stderr, "Couldn't initialize SDL: %s\n", SDL_GetError());
 		return 1;
 	}
 
-	/* ƒTƒEƒ“ƒh‚Ì‰Šú‰» */
+	/* ÂƒTÂƒEÂƒÂ“ÂƒhÂ‚ÃŒÂÂ‰ÂŠÃºÂ‰Â» */
 	Mix_OpenAudio(44100, AUDIO_S16, 2, 800);
 	Mix_AllocateChannels(100);
 
