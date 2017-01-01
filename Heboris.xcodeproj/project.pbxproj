@@ -7,22 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		002F3A2E09D0888800EBEB88 /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F3A2C09D0888800EBEB88 /* SDLMain.m */; };
-		3CC201571E10D0A300DEFCA8 /* libSDL-1.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC201551E10CFC000DEFCA8 /* libSDL-1.2.0.dylib */; };
-		3CC201591E10D21300DEFCA8 /* libSDL_image-1.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC201581E10D21200DEFCA8 /* libSDL_image-1.2.0.dylib */; };
-		3CC2015B1E10D22A00DEFCA8 /* libSDL_mixer-1.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC2015A1E10D22900DEFCA8 /* libSDL_mixer-1.2.0.dylib */; };
-		615787250CF4891D00F70104 /* SDL_kanji.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 615787240CF4891D00F70104 /* SDL_kanji.h */; };
+		3C1397E91E1762DE00FAA32F /* ygs2kfunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C1397E81E1762DE00FAA32F /* ygs2kfunc.cpp */; };
+		3C1397EB1E17639B00FAA32F /* SDL_kanji.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C1397EA1E17639B00FAA32F /* SDL_kanji.cpp */; };
+		3C1397EE1E178C4700FAA32F /* gamestart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C1397ED1E178C4700FAA32F /* gamestart.cpp */; };
+		3C903F1D1E1791EF00B28699 /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C903F1C1E1791EE00B28699 /* libSDL2-2.0.0.dylib */; };
+		3C903F1F1E1791FF00B28699 /* libSDL2_image.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C903F1E1E1791FE00B28699 /* libSDL2_image.dylib */; };
+		3C903F211E17920F00B28699 /* libSDL2_mixer.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C903F201E17920E00B28699 /* libSDL2_mixer.dylib */; };
 		616833C20CF5E8E800935B2F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616833BE0CF5E8DE00935B2F /* OpenGL.framework */; };
 		616833C40CF5E90300935B2F /* opengl_utils.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 616833C30CF5E90300935B2F /* opengl_utils.h */; };
 		616833C60CF5E90A00935B2F /* opengl_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 616833C50CF5E90A00935B2F /* opengl_utils.cpp */; };
-		616833CA0CF5E94400935B2F /* SDL_kanji.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 616833C90CF5E94400935B2F /* SDL_kanji.cpp */; };
 		61B09B3A0CF0BC6A004917E9 /* inireader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61B09B380CF0BC6A004917E9 /* inireader.cpp */; };
 		61B09B3B0CF0BC6A004917E9 /* inireader.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 61B09B390CF0BC6A004917E9 /* inireader.h */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		CB8190E00AAB51C20095CB21 /* gamestart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB8190BA0AAB51C20095CB21 /* gamestart.cpp */; };
 		CB8190E80AAB51C20095CB21 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB8190C30AAB51C20095CB21 /* main.cpp */; };
-		CB8190EB0AAB51C20095CB21 /* ygs2kfunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB8190C60AAB51C20095CB21 /* ygs2kfunc.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,7 +31,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				61B09B3B0CF0BC6A004917E9 /* inireader.h in Copy Frameworks into .app bundle */,
-				615787250CF4891D00F70104 /* SDL_kanji.h in Copy Frameworks into .app bundle */,
 				616833C40CF5E90300935B2F /* opengl_utils.h in Copy Frameworks into .app bundle */,
 			);
 			name = "Copy Frameworks into .app bundle";
@@ -43,13 +40,18 @@
 
 /* Begin PBXFileReference section */
 		002F39F909D0881F00EBEB88 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = /Library/Frameworks/SDL.framework; sourceTree = "<absolute>"; };
-		002F3A2B09D0888800EBEB88 /* SDLMain.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SDLMain.h; sourceTree = SOURCE_ROOT; };
-		002F3A2C09D0888800EBEB88 /* SDLMain.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SDLMain.m; sourceTree = SOURCE_ROOT; };
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* Heboris_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Heboris_Prefix.pch; sourceTree = "<group>"; };
+		3C1397E81E1762DE00FAA32F /* ygs2kfunc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ygs2kfunc.cpp; sourceTree = "<group>"; };
+		3C1397EA1E17639B00FAA32F /* SDL_kanji.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SDL_kanji.cpp; sourceTree = "<group>"; };
+		3C1397EC1E17644C00FAA32F /* SDL_kanji.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDL_kanji.h; sourceTree = "<group>"; };
+		3C1397ED1E178C4700FAA32F /* gamestart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gamestart.cpp; sourceTree = "<group>"; };
+		3C903F1C1E1791EE00B28699 /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "lib/sdl2/2.0.4/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
+		3C903F1E1E1791FE00B28699 /* libSDL2_image.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSDL2_image.dylib; path = lib/sdl2_image/2.0.1_1/lib/libSDL2_image.dylib; sourceTree = "<group>"; };
+		3C903F201E17920E00B28699 /* libSDL2_mixer.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSDL2_mixer.dylib; path = lib/sdl2_mixer/2.0.1/lib/libSDL2_mixer.dylib; sourceTree = "<group>"; };
 		3CC201531E10CF4400DEFCA8 /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../../usr/local/Cellar/sdl2/2.0.4/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
 		3CC201551E10CFC000DEFCA8 /* libSDL-1.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL-1.2.0.dylib"; path = "../../../../usr/local/Cellar/sdl/1.2.15/lib/libSDL-1.2.0.dylib"; sourceTree = "<group>"; };
 		3CC201581E10D21200DEFCA8 /* libSDL_image-1.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL_image-1.2.0.dylib"; path = "../../../../usr/local/Cellar/sdl_image/1.2.12_2/lib/libSDL_image-1.2.0.dylib"; sourceTree = "<group>"; };
@@ -57,11 +59,9 @@
 		3CE5D6CD1E10CB3E0026D0A2 /* Library */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Library; path = ../../../../Library; sourceTree = "<group>"; };
 		3CE5D6CF1E10CB570026D0A2 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
 		3CE5D6D11E10CB790026D0A2 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
-		615787240CF4891D00F70104 /* SDL_kanji.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = SDL_kanji.h; sourceTree = "<group>"; };
 		616833BE0CF5E8DE00935B2F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		616833C30CF5E90300935B2F /* opengl_utils.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = opengl_utils.h; sourceTree = "<group>"; };
 		616833C50CF5E90A00935B2F /* opengl_utils.cpp */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.cpp.cpp; path = opengl_utils.cpp; sourceTree = "<group>"; };
-		616833C90CF5E94400935B2F /* SDL_kanji.cpp */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.cpp.cpp; path = SDL_kanji.cpp; sourceTree = "<group>"; };
 		61B09B380CF0BC6A004917E9 /* inireader.cpp */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.cpp.cpp; path = inireader.cpp; sourceTree = "<group>"; };
 		61B09B390CF0BC6A004917E9 /* inireader.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = inireader.h; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -69,7 +69,6 @@
 		CB5D60930AA750CD003C65A7 /* SDL_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_image.framework; path = /Library/Frameworks/SDL_image.framework; sourceTree = "<absolute>"; };
 		CB5D60940AA750CD003C65A7 /* SDL_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_mixer.framework; path = /Library/Frameworks/SDL_mixer.framework; sourceTree = "<absolute>"; };
 		CB8190B90AAB51C20095CB21 /* gamedef.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = gamedef.h; sourceTree = "<group>"; };
-		CB8190BA0AAB51C20095CB21 /* gamestart.cpp */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.cpp.cpp; path = gamestart.cpp; sourceTree = "<group>"; };
 		CB8190BB0AAB51C20095CB21 /* gamestart.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = gamestart.h; sourceTree = "<group>"; };
 		CB8190BC0AAB51C20095CB21 /* heboris.ini */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = text; path = heboris.ini; sourceTree = "<group>"; };
 		CB8190BD0AAB51C20095CB21 /* heboris_user.ini */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = text; path = heboris_user.ini; sourceTree = "<group>"; };
@@ -80,7 +79,6 @@
 		CB8190C30AAB51C20095CB21 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		CB8190C40AAB51C20095CB21 /* main.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 		CB8190C50AAB51C20095CB21 /* option.def */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = text; path = option.def; sourceTree = "<group>"; };
-		CB8190C60AAB51C20095CB21 /* ygs2kfunc.cpp */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.cpp.cpp; path = ygs2kfunc.cpp; sourceTree = "<group>"; };
 		CB8190C70AAB51C20095CB21 /* ygs2kfunc.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = ygs2kfunc.h; sourceTree = "<group>"; };
 		CB8190C90AAB51C20095CB21 /* ars.c */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.c; path = ars.c; sourceTree = "<group>"; };
 		CB8190CA0AAB51C20095CB21 /* changelog.txt */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = text; path = changelog.txt; sourceTree = "<group>"; };
@@ -111,9 +109,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CC2015B1E10D22A00DEFCA8 /* libSDL_mixer-1.2.0.dylib in Frameworks */,
-				3CC201591E10D21300DEFCA8 /* libSDL_image-1.2.0.dylib in Frameworks */,
-				3CC201571E10D0A300DEFCA8 /* libSDL-1.2.0.dylib in Frameworks */,
+				3C903F211E17920F00B28699 /* libSDL2_mixer.dylib in Frameworks */,
+				3C903F1F1E1791FF00B28699 /* libSDL2_image.dylib in Frameworks */,
+				3C903F1D1E1791EF00B28699 /* libSDL2-2.0.0.dylib in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				616833C20CF5E8E800935B2F /* OpenGL.framework in Frameworks */,
 			);
@@ -125,8 +123,6 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				002F3A2B09D0888800EBEB88 /* SDLMain.h */,
-				002F3A2C09D0888800EBEB88 /* SDLMain.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -193,6 +189,9 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3C903F201E17920E00B28699 /* libSDL2_mixer.dylib */,
+				3C903F1E1E1791FE00B28699 /* libSDL2_image.dylib */,
+				3C903F1C1E1791EE00B28699 /* libSDL2-2.0.0.dylib */,
 				3CC2015A1E10D22900DEFCA8 /* libSDL_mixer-1.2.0.dylib */,
 				3CC201581E10D21200DEFCA8 /* libSDL_image-1.2.0.dylib */,
 				3CC201551E10CFC000DEFCA8 /* libSDL-1.2.0.dylib */,
@@ -223,12 +222,12 @@
 				61B09B380CF0BC6A004917E9 /* inireader.cpp */,
 				61B09B390CF0BC6A004917E9 /* inireader.h */,
 				CB8190B90AAB51C20095CB21 /* gamedef.h */,
-				CB8190BA0AAB51C20095CB21 /* gamestart.cpp */,
 				CB8190BB0AAB51C20095CB21 /* gamestart.h */,
 				CB8190BC0AAB51C20095CB21 /* heboris.ini */,
 				CB8190BD0AAB51C20095CB21 /* heboris_user.ini */,
 				CB8190BE0AAB51C20095CB21 /* prototypes.h */,
 				CB8190BF0AAB51C20095CB21 /* speed.def */,
+				3C1397ED1E178C4700FAA32F /* gamestart.cpp */,
 			);
 			path = game;
 			sourceTree = "<group>";
@@ -238,15 +237,15 @@
 			children = (
 				616833C50CF5E90A00935B2F /* opengl_utils.cpp */,
 				616833C30CF5E90300935B2F /* opengl_utils.h */,
-				615787240CF4891D00F70104 /* SDL_kanji.h */,
-				616833C90CF5E94400935B2F /* SDL_kanji.cpp */,
+				3C1397EA1E17639B00FAA32F /* SDL_kanji.cpp */,
 				CB8190C10AAB51C20095CB21 /* include.h */,
+				3C1397EC1E17644C00FAA32F /* SDL_kanji.h */,
 				CB8190C20AAB51C20095CB21 /* keyconf.def */,
 				CB8190C30AAB51C20095CB21 /* main.cpp */,
 				CB8190C40AAB51C20095CB21 /* main.h */,
 				CB8190C50AAB51C20095CB21 /* option.def */,
-				CB8190C60AAB51C20095CB21 /* ygs2kfunc.cpp */,
 				CB8190C70AAB51C20095CB21 /* ygs2kfunc.h */,
+				3C1397E81E1762DE00FAA32F /* ygs2kfunc.cpp */,
 			);
 			path = main_sdl;
 			sourceTree = "<group>";
@@ -342,13 +341,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				002F3A2E09D0888800EBEB88 /* SDLMain.m in Sources */,
-				CB8190E00AAB51C20095CB21 /* gamestart.cpp in Sources */,
+				3C1397EB1E17639B00FAA32F /* SDL_kanji.cpp in Sources */,
+				3C1397EE1E178C4700FAA32F /* gamestart.cpp in Sources */,
 				CB8190E80AAB51C20095CB21 /* main.cpp in Sources */,
-				CB8190EB0AAB51C20095CB21 /* ygs2kfunc.cpp in Sources */,
 				61B09B3A0CF0BC6A004917E9 /* inireader.cpp in Sources */,
 				616833C60CF5E90A00935B2F /* opengl_utils.cpp in Sources */,
-				616833CA0CF5E94400935B2F /* SDL_kanji.cpp in Sources */,
+				3C1397E91E1762DE00FAA32F /* ygs2kfunc.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,32 +369,30 @@
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)";
 				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(LOCAL_LIBRARY_DIR)/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_TREAT_NONCONFORMANT_CODE_ERRORS_AS_WARNINGS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = NO;
 				HEADER_SEARCH_PATHS = (
-					/usr/local/Cellar/sdl/1.2.15/include/SDL,
 					src,
 					src/game,
 					src/main_sdl,
 					"$(HEADER_SEARCH_PATHS)",
-					/usr/local/Cellar/sdl_image/1.2.12_2/include/SDL,
-					/usr/local/Cellar/sdl_mixer/1.2.12/include/SDL,
+					"$(PROJECT_DIR)/lib/sdl2_image/2.0.1_1/include/SDL2",
+					"$(PROJECT_DIR)/lib/sdl2_mixer/2.0.1/include/SDL2",
+					"$(PROJECT_DIR)/lib/sdl2/2.0.4/include/SDL2",
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = (
-					/usr/local/Cellar/sdl/1.2.15/lib,
 					"$(inherited)",
-					/usr/local/Cellar/sdl_image/1.2.12_2/lib,
-					/usr/local/Cellar/sdl_mixer/1.2.12/lib,
+					"$(PROJECT_DIR)/lib/sdl2_image/2.0.1_1/lib",
+					"$(PROJECT_DIR)/lib/sdl2_mixer/2.0.1/lib",
+					"$(PROJECT_DIR)/lib/sdl2/2.0.4/lib",
 				);
 				OBJROOT = "$(SYMROOT)";
+				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Heboris;
 				PRODUCT_NAME = Heboris;
 				SDKROOT = macosx10.11;
@@ -458,32 +454,30 @@
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)";
 				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(LOCAL_LIBRARY_DIR)/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_TREAT_NONCONFORMANT_CODE_ERRORS_AS_WARNINGS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = NO;
 				HEADER_SEARCH_PATHS = (
-					/usr/local/Cellar/sdl/1.2.15/include/SDL,
 					src,
 					src/game,
 					src/main_sdl,
 					"$(HEADER_SEARCH_PATHS)",
-					/usr/local/Cellar/sdl_image/1.2.12_2/include/SDL,
-					/usr/local/Cellar/sdl_mixer/1.2.12/include/SDL,
+					"$(PROJECT_DIR)/lib/sdl2_image/2.0.1_1/include/SDL2",
+					"$(PROJECT_DIR)/lib/sdl2_mixer/2.0.1/include/SDL2",
+					"$(PROJECT_DIR)/lib/sdl2/2.0.4/include/SDL2",
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = (
-					/usr/local/Cellar/sdl/1.2.15/lib,
 					"$(inherited)",
-					/usr/local/Cellar/sdl_image/1.2.12_2/lib,
-					/usr/local/Cellar/sdl_mixer/1.2.12/lib,
+					"$(PROJECT_DIR)/lib/sdl2_image/2.0.1_1/lib",
+					"$(PROJECT_DIR)/lib/sdl2_mixer/2.0.1/lib",
+					"$(PROJECT_DIR)/lib/sdl2/2.0.4/lib",
 				);
 				OBJROOT = "$(SYMROOT)";
+				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Heboris;
 				PRODUCT_NAME = Heboris;
 				SDKROOT = macosx10.11;

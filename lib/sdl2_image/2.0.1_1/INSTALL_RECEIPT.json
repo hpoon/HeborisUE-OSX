@@ -1,0 +1,1 @@
+{"used_options":[],"unused_options":["--universal","--without-jpeg","--without-libpng","--without-libtiff","--without-webp"],"built_as_bottle":true,"poured_from_bottle":true,"time":1482724915,"source_modified_time":1451800353,"HEAD":null,"stdlib":null,"compiler":"clang","source":{"path":"/usr/local/Library/Formula/sdl2_image.rb","tap":"homebrew/core","spec":"stable"}}
