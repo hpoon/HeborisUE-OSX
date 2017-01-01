@@ -58,9 +58,9 @@ inline bool IsSpaceChar(char chr)
 	return chr == ' ' || chr == '\t' || chr == '\r' || chr == '\n';
 }
 
-static void IniReadProcess(char* buf, size_t size)
+static void IniReadProcess(char* buf, int size)
 {
-	for ( size_t i = 0 ; i < size ; i ++ )
+	for ( int i = 0 ; i < size ; i ++ )
 	{
 		char	chr = buf[i];
 	
@@ -237,7 +237,7 @@ void LoadIniFile(char *filename)
 		char	buf[INIREAD_READBUFFER_MAX];
 		while ( !feof(file) )
 		{
-			size_t readsize = 0;
+			int readsize = 0;
 			readsize = fread(buf, 1, INIREAD_READBUFFER_MAX, file);
 			IniReadProcess(buf, readsize);
 		}
