@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C1397E91E1762DE00FAA32F /* ygs2kfunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C1397E81E1762DE00FAA32F /* ygs2kfunc.cpp */; };
-		3C1397EB1E17639B00FAA32F /* SDL_kanji.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C1397EA1E17639B00FAA32F /* SDL_kanji.cpp */; };
-		3C1397EE1E178C4700FAA32F /* gamestart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C1397ED1E178C4700FAA32F /* gamestart.cpp */; };
-		3C2173C81E19A7C7006F2EA8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C2173C71E19A7C7006F2EA8 /* main.cpp */; };
 		002F3A2E09D0888800EBEB88 /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F3A2C09D0888800EBEB88 /* SDLMain.m */; };
 		3CC201571E10D0A300DEFCA8 /* libSDL-1.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC201551E10CFC000DEFCA8 /* libSDL-1.2.0.dylib */; };
 		3CC201591E10D21300DEFCA8 /* libSDL_image-1.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC201581E10D21200DEFCA8 /* libSDL_image-1.2.0.dylib */; };
@@ -24,6 +20,9 @@
 		61B09B3B0CF0BC6A004917E9 /* inireader.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 61B09B390CF0BC6A004917E9 /* inireader.h */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		CB8190E00AAB51C20095CB21 /* gamestart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB8190BA0AAB51C20095CB21 /* gamestart.cpp */; };
+		CB8190E80AAB51C20095CB21 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB8190C30AAB51C20095CB21 /* main.cpp */; };
+		CB8190EB0AAB51C20095CB21 /* ygs2kfunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB8190C60AAB51C20095CB21 /* ygs2kfunc.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,15 +50,13 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* Heboris_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Heboris_Prefix.pch; sourceTree = "<group>"; };
-		3C1397E81E1762DE00FAA32F /* ygs2kfunc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ygs2kfunc.cpp; sourceTree = "<group>"; };
-		3C1397EA1E17639B00FAA32F /* SDL_kanji.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SDL_kanji.cpp; sourceTree = "<group>"; };
-		3C1397EC1E17644C00FAA32F /* SDL_kanji.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDL_kanji.h; sourceTree = "<group>"; };
-		3C1397ED1E178C4700FAA32F /* gamestart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gamestart.cpp; sourceTree = "<group>"; };
-		3C2173C71E19A7C7006F2EA8 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		3CC201531E10CF4400DEFCA8 /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../../usr/local/Cellar/sdl2/2.0.4/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
 		3CC201551E10CFC000DEFCA8 /* libSDL-1.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL-1.2.0.dylib"; path = "../../../../usr/local/Cellar/sdl/1.2.15/lib/libSDL-1.2.0.dylib"; sourceTree = "<group>"; };
 		3CC201581E10D21200DEFCA8 /* libSDL_image-1.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL_image-1.2.0.dylib"; path = "../../../../usr/local/Cellar/sdl_image/1.2.12_2/lib/libSDL_image-1.2.0.dylib"; sourceTree = "<group>"; };
 		3CC2015A1E10D22900DEFCA8 /* libSDL_mixer-1.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL_mixer-1.2.0.dylib"; path = "../../../../usr/local/Cellar/sdl_mixer/1.2.12/lib/libSDL_mixer-1.2.0.dylib"; sourceTree = "<group>"; };
 		3CE5D6CD1E10CB3E0026D0A2 /* Library */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Library; path = ../../../../Library; sourceTree = "<group>"; };
+		3CE5D6CF1E10CB570026D0A2 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
+		3CE5D6D11E10CB790026D0A2 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
 		615787240CF4891D00F70104 /* SDL_kanji.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = SDL_kanji.h; sourceTree = "<group>"; };
 		616833BE0CF5E8DE00935B2F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		616833C30CF5E90300935B2F /* opengl_utils.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = opengl_utils.h; sourceTree = "<group>"; };
@@ -80,6 +77,7 @@
 		CB8190BF0AAB51C20095CB21 /* speed.def */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = text; path = speed.def; sourceTree = "<group>"; };
 		CB8190C10AAB51C20095CB21 /* include.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = include.h; sourceTree = "<group>"; };
 		CB8190C20AAB51C20095CB21 /* keyconf.def */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = text; path = keyconf.def; sourceTree = "<group>"; };
+		CB8190C30AAB51C20095CB21 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		CB8190C40AAB51C20095CB21 /* main.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 		CB8190C50AAB51C20095CB21 /* option.def */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = text; path = option.def; sourceTree = "<group>"; };
 		CB8190C60AAB51C20095CB21 /* ygs2kfunc.cpp */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.cpp.cpp; path = ygs2kfunc.cpp; sourceTree = "<group>"; };
@@ -244,11 +242,11 @@
 				616833C90CF5E94400935B2F /* SDL_kanji.cpp */,
 				CB8190C10AAB51C20095CB21 /* include.h */,
 				CB8190C20AAB51C20095CB21 /* keyconf.def */,
+				CB8190C30AAB51C20095CB21 /* main.cpp */,
 				CB8190C40AAB51C20095CB21 /* main.h */,
 				CB8190C50AAB51C20095CB21 /* option.def */,
 				CB8190C60AAB51C20095CB21 /* ygs2kfunc.cpp */,
 				CB8190C70AAB51C20095CB21 /* ygs2kfunc.h */,
-				3C2173C71E19A7C7006F2EA8 /* main.cpp */,
 			);
 			path = main_sdl;
 			sourceTree = "<group>";
@@ -344,13 +342,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C1397EB1E17639B00FAA32F /* SDL_kanji.cpp in Sources */,
-				3C1397EE1E178C4700FAA32F /* gamestart.cpp in Sources */,
-				3C2173C81E19A7C7006F2EA8 /* main.cpp in Sources */,
 				002F3A2E09D0888800EBEB88 /* SDLMain.m in Sources */,
+				CB8190E00AAB51C20095CB21 /* gamestart.cpp in Sources */,
+				CB8190E80AAB51C20095CB21 /* main.cpp in Sources */,
 				CB8190EB0AAB51C20095CB21 /* ygs2kfunc.cpp in Sources */,
 				61B09B3A0CF0BC6A004917E9 /* inireader.cpp in Sources */,
 				616833C60CF5E90A00935B2F /* opengl_utils.cpp in Sources */,
+				616833CA0CF5E94400935B2F /* SDL_kanji.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
