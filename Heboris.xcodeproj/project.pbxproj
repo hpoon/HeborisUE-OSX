@@ -10,16 +10,15 @@
 		3C1397E91E1762DE00FAA32F /* ygs2kfunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C1397E81E1762DE00FAA32F /* ygs2kfunc.cpp */; };
 		3C1397EB1E17639B00FAA32F /* SDL_kanji.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C1397EA1E17639B00FAA32F /* SDL_kanji.cpp */; };
 		3C1397EE1E178C4700FAA32F /* gamestart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C1397ED1E178C4700FAA32F /* gamestart.cpp */; };
+		3C2173D11E1A153D006F2EA8 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C2173CD1E1A1181006F2EA8 /* OpenGL.framework */; };
 		3C903F1D1E1791EF00B28699 /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C903F1C1E1791EE00B28699 /* libSDL2-2.0.0.dylib */; };
 		3C903F1F1E1791FF00B28699 /* libSDL2_image.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C903F1E1E1791FE00B28699 /* libSDL2_image.dylib */; };
 		3C903F211E17920F00B28699 /* libSDL2_mixer.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C903F201E17920E00B28699 /* libSDL2_mixer.dylib */; };
-		616833C20CF5E8E800935B2F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616833BE0CF5E8DE00935B2F /* OpenGL.framework */; };
 		616833C40CF5E90300935B2F /* opengl_utils.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 616833C30CF5E90300935B2F /* opengl_utils.h */; };
 		616833C60CF5E90A00935B2F /* opengl_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 616833C50CF5E90A00935B2F /* opengl_utils.cpp */; };
 		61B09B3A0CF0BC6A004917E9 /* inireader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61B09B380CF0BC6A004917E9 /* inireader.cpp */; };
 		61B09B3B0CF0BC6A004917E9 /* inireader.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 61B09B390CF0BC6A004917E9 /* inireader.h */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
-		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		CB8190E80AAB51C20095CB21 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB8190C30AAB51C20095CB21 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +48,8 @@
 		3C1397EA1E17639B00FAA32F /* SDL_kanji.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SDL_kanji.cpp; sourceTree = "<group>"; };
 		3C1397EC1E17644C00FAA32F /* SDL_kanji.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDL_kanji.h; sourceTree = "<group>"; };
 		3C1397ED1E178C4700FAA32F /* gamestart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gamestart.cpp; sourceTree = "<group>"; };
+		3C2173CD1E1A1181006F2EA8 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
+		3C2173CF1E1A144D006F2EA8 /* libGLEW.2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.0.0.dylib; path = lib/glew/2.0.0/lib/libGLEW.2.0.0.dylib; sourceTree = "<group>"; };
 		3C903F1C1E1791EE00B28699 /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "lib/sdl2/2.0.4/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
 		3C903F1E1E1791FE00B28699 /* libSDL2_image.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSDL2_image.dylib; path = lib/sdl2_image/2.0.1_1/lib/libSDL2_image.dylib; sourceTree = "<group>"; };
 		3C903F201E17920E00B28699 /* libSDL2_mixer.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSDL2_mixer.dylib; path = lib/sdl2_mixer/2.0.1/lib/libSDL2_mixer.dylib; sourceTree = "<group>"; };
@@ -109,11 +110,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C2173D11E1A153D006F2EA8 /* OpenGL.framework in Frameworks */,
 				3C903F211E17920F00B28699 /* libSDL2_mixer.dylib in Frameworks */,
 				3C903F1F1E1791FF00B28699 /* libSDL2_image.dylib in Frameworks */,
 				3C903F1D1E1791EF00B28699 /* libSDL2-2.0.0.dylib in Frameworks */,
-				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				616833C20CF5E8E800935B2F /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +189,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3C2173CF1E1A144D006F2EA8 /* libGLEW.2.0.0.dylib */,
+				3C2173CD1E1A1181006F2EA8 /* OpenGL.framework */,
 				3C903F201E17920E00B28699 /* libSDL2_mixer.dylib */,
 				3C903F1E1E1791FE00B28699 /* libSDL2_image.dylib */,
 				3C903F1C1E1791EE00B28699 /* libSDL2-2.0.0.dylib */,
@@ -372,6 +374,7 @@
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_TREAT_NONCONFORMANT_CODE_ERRORS_AS_WARNINGS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = NO;
 				HEADER_SEARCH_PATHS = (
@@ -390,6 +393,7 @@
 					"$(PROJECT_DIR)/lib/sdl2_image/2.0.1_1/lib",
 					"$(PROJECT_DIR)/lib/sdl2_mixer/2.0.1/lib",
 					"$(PROJECT_DIR)/lib/sdl2/2.0.4/lib",
+					"$(PROJECT_DIR)/lib/glew/2.0.0/lib",
 				);
 				OBJROOT = "$(SYMROOT)";
 				OTHER_CFLAGS = "";
@@ -457,6 +461,7 @@
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_TREAT_NONCONFORMANT_CODE_ERRORS_AS_WARNINGS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = NO;
 				HEADER_SEARCH_PATHS = (
@@ -475,6 +480,7 @@
 					"$(PROJECT_DIR)/lib/sdl2_image/2.0.1_1/lib",
 					"$(PROJECT_DIR)/lib/sdl2_mixer/2.0.1/lib",
 					"$(PROJECT_DIR)/lib/sdl2/2.0.4/lib",
+					"$(PROJECT_DIR)/lib/glew/2.0.0/lib",
 				);
 				OBJROOT = "$(SYMROOT)";
 				OTHER_CFLAGS = "";

@@ -85,6 +85,9 @@ static int				s_iActivePad;
 
 static int				s_iWinWidth;
 static int				s_iWinHeight;
+#if SDL_USE_OPENGL
+static float			s_fDrawScale = 1.0f;
+#endif
 
 static unsigned int		s_uTimeCount;
 static unsigned int		s_uFPSCount;
@@ -98,6 +101,25 @@ extern int				screenMode;
 
 static int				s_iNewOffsetX = 0, s_iNewOffsetY = 0;
 static int				s_iOffsetX = 0, s_iOffsetY = 0;
+
+#if		SDL_USE_OPENGL
+static SScreenInfo	s_ScreenInfo[] =
+{
+    { 320, 240,  320,  240, true },		// 0
+    { 320, 240,  320,  240, false },	// 1
+    { 640, 480,  640,  480, false },	// 2
+    { 640, 480,  640,  480, true },		// 3
+    { 640, 480,  800,  600, false },	// 4
+    { 640, 480, 1024,  768, false },	// 5
+    { 640, 480, 1280,  960, false },	// 6
+    { 320, 240,  640,  480, true },		// 7
+    { 320, 240,  480,  360, false },	// 8
+    { 320, 240,  640,  480, false },	// 9
+    { 320, 240,  800,  600, false },	// 10
+    { 320, 240, 1024,  768, false },	// 11
+    { 320, 240, 1280,  960, false },	// 12
+};
+#endif
 
 bool YGS2kInit()
 {
@@ -122,7 +144,7 @@ bool YGS2kInit()
         SScreenInfo		*s = &s_ScreenInfo[screenMode];
         winWidth  = s->win_w;
         winHeight = s->win_h;
-        fullscreen = s->full_screen ? SDL_FULLSCREEN : 0;
+        fullscreen = s->full_screen ? SDL_WINDOW_FULLSCREEN : 0;
         s_fDrawScale = (float)s->win_w / (float)s->real_w;
         SDL_GL_SetDrawRate(s_fDrawScale);
     }
@@ -157,6 +179,7 @@ bool YGS2kInit()
                                  SDL_WINDOWPOS_UNDEFINED,
                                  winWidth, winHeight,
                                  SDL_WINDOW_OPENGL | fullscreen);
+    SDL_GL_CreateContext(s_pWindow);
 #else
     s_pWindow = SDL_CreateWindow(GAME_CAPTION,
                                  SDL_WINDOWPOS_UNDEFINED,
@@ -309,12 +332,12 @@ bool YGS2kHalt()
     
 #if		SDL_USE_OPENGL
     SDL_GL_Leave2DMode();
-    SDL_GL_SwapBuffers();
+    SDL_GL_SwapWindow(s_pWindow);
     
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
     glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
     
-    SDL_GL_Enter2DMode();
+    SDL_GL_Enter2DMode(s_pScreenSurface->w, s_pScreenSurface->h);
 #else
     SDL_UpdateWindowSurface(s_pWindow);
     
@@ -681,7 +704,7 @@ void LoadBitmap( char* filename, int plane, int val )
     SDL_Surface		*surface	= IMG_Load(filename);
     if ( surface != NULL )
     {
-        surface = SDL_DisplayFormat(surface);
+        surface = SDL_ConvertSurfaceFormat(surface, SDL_PIXELFORMAT_ARGB8888, 0);
         SDL_GL_LoadTexture(surface, &s_pYGSTexture[plane]);
         SDL_FreeSurface(surface);
     }

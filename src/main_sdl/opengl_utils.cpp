@@ -14,10 +14,8 @@ extern	int		cpp_texfilter;
 
 /**********************************************************************/
 
-void SDL_GL_Enter2DMode()
+void SDL_GL_Enter2DMode(int w, int h)
 {
-	SDL_Surface *screen = SDL_GetVideoSurface();
-
 	/* Note, there may be other things you need to change,
 	   depending on how you have your OpenGL state set up.
 	*/
@@ -30,13 +28,13 @@ void SDL_GL_Enter2DMode()
 	glEnable(GL_BLEND);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-	glViewport(0, 0, screen->w, screen->h);
+	glViewport(0, 0, w, h);
 
 	glMatrixMode(GL_PROJECTION);
 	glPushMatrix();
 	glLoadIdentity();
 
-	glOrtho(0.0, (GLdouble)screen->w, (GLdouble)screen->h, 0.0, 0.0, 1.0);
+	glOrtho(0.0, (GLdouble)w, (GLdouble)h, 0.0, 0.0, 1.0);
 
 	glMatrixMode(GL_MODELVIEW);
 	glPushMatrix();
@@ -84,7 +82,6 @@ GLuint SDL_GL_LoadTexture(SDL_Surface *surface, GL_Texture *ptexture)
 	int w, h;
 	SDL_Surface *image;
 	SDL_Rect area;
-	Uint32 saved_flags;
 	Uint8  saved_alpha;
 
 	memset(ptexture, 0, sizeof(*ptexture));
@@ -123,11 +120,8 @@ GLuint SDL_GL_LoadTexture(SDL_Surface *surface, GL_Texture *ptexture)
 	}
 
 	/* Save the alpha blending attributes */
-	saved_flags = surface->flags&(SDL_SRCALPHA|SDL_RLEACCELOK);
-	saved_alpha = surface->format->alpha;
-	if ( (saved_flags & SDL_SRCALPHA) == SDL_SRCALPHA ) {
-		SDL_SetAlpha(surface, 0, 0);
-	}
+    SDL_GetSurfaceAlphaMod(surface, &saved_alpha);
+    SDL_SetSurfaceAlphaMod(surface, 0);
 
 	/* Copy the surface into the GL texture image */
 	area.x = 0;
@@ -137,9 +131,7 @@ GLuint SDL_GL_LoadTexture(SDL_Surface *surface, GL_Texture *ptexture)
 	SDL_BlitSurface(surface, &area, image, &area);
 
 	/* Restore the alpha blending attributes */
-	if ( (saved_flags & SDL_SRCALPHA) == SDL_SRCALPHA ) {
-		SDL_SetAlpha(surface, saved_flags, saved_alpha);
-	}
+    SDL_SetSurfaceAlphaMod(surface, saved_alpha);
 
 	/* Create an OpenGL texture for the image */
 	glGenTextures(1, &texture);
@@ -161,7 +153,7 @@ GLuint SDL_GL_LoadTexture(SDL_Surface *surface, GL_Texture *ptexture)
 	ptexture->active = true;
 	ptexture->texture = texture;
 
-		return texture;
+    return texture;
 }
 
 void SDL_GL_FreeTexture(GL_Texture *ptexture)
