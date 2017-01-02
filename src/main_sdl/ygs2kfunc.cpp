@@ -54,9 +54,7 @@ enum
 };
 
 static SDL_Window       *s_pWindow = NULL;
-static SDL_Renderer     *s_pRenderer = NULL;
 static SDL_Surface      *s_pScreenSurface = NULL;
-static SDL_Texture      *s_pScreenTexture = NULL;
 
 #if		SDL_USE_OPENGL
 static GL_Texture		s_pYGSTexture[YGS_TEXTURE_MAX];
@@ -167,17 +165,7 @@ bool YGS2kInit()
                                  SDL_SWSURFACE | fullscreen);
 #endif
 
-    s_pRenderer = SDL_CreateRenderer(s_pWindow, -1, 0);
-    
-    s_pScreenSurface = SDL_CreateRGBSurface(0, winWidth, winHeight, 32,
-                                            0x00FF0000,
-                                            0x0000FF00,
-                                            0x000000FF,
-                                            0xFF000000);
-    s_pScreenTexture = SDL_CreateTexture(s_pRenderer,
-                                         SDL_PIXELFORMAT_ARGB8888,
-                                         SDL_TEXTUREACCESS_STREAMING,
-                                         winWidth, winHeight);
+    s_pScreenSurface = SDL_GetWindowSurface( s_pWindow );
     
     /* É}ÉEÉXÉJÅ[É\ÉãÇè¡Ç∑èÍçáÇÕ */
     if ( fullscreen == SDL_WINDOW_FULLSCREEN )
@@ -290,17 +278,13 @@ void YGS2kExit()
             s_pYGSExMusic[i] = NULL;
         }
     }
-    
-    if (s_pScreenTexture != NULL) {
-        SDL_DestroyTexture(s_pScreenTexture);
-    }
-    
+
     if (s_pScreenSurface != NULL) {
         SDL_FreeSurface(s_pScreenSurface);
     }
     
-    if (s_pRenderer != NULL) {
-        SDL_DestroyRenderer(s_pRenderer);
+    if (s_pWindow != NULL) {
+        SDL_DestroyWindow(s_pWindow);
     }
     
     YGS2kKanjiFontFinalize();
@@ -332,14 +316,9 @@ bool YGS2kHalt()
     
     SDL_GL_Enter2DMode();
 #else
-    // The original code did a Flip (now RenderPresent) and then did a FillRect (now RenderClear).  Why?
-    SDL_UpdateTexture(s_pScreenTexture, NULL, s_pScreenSurface->pixels, s_pScreenSurface->pitch);
-//    SDL_RenderClear(s_pRenderer);
-    SDL_RenderCopy(s_pRenderer, s_pScreenTexture, NULL, NULL);
-    SDL_RenderPresent(s_pRenderer);
-
-    SDL_SetRenderDrawColor(s_pRenderer, 0, 0, 0, 255);
-    SDL_RenderClear(s_pRenderer);
+    SDL_UpdateWindowSurface(s_pWindow);
+    
+    SDL_FillRect( s_pScreenSurface, NULL, SDL_MapRGB( s_pScreenSurface->format, 0xFF, 0xFF, 0xFF ) );
 #endif
     
     /* ÉCÉxÉìÉgèàóù */
@@ -451,27 +430,27 @@ int IsPressJoyKey ( int key )
 
 int IsPushReturnKey()
 {
-    return IsPushKey(SDLK_RETURN);
+    return IsPushKey(SDL_SCANCODE_RETURN);
 }
 
 int IsPushDeleteKey()
 {
-    return IsPushKey(SDLK_DELETE);
+    return IsPushKey(SDL_SCANCODE_DELETE);
 }
 
 int IsPushBSKey()
 {
-    return IsPushKey(SDLK_BACKSPACE);
+    return IsPushKey(SDL_SCANCODE_BACKSPACE);
 }
 
 int IsPushEscKey()
 {
-    return IsPushKey(SDLK_ESCAPE);
+    return IsPushKey(SDL_SCANCODE_ESCAPE);
 }
 
 int IsPushEndKey()
 {
-    return IsPushKey(SDLK_END);
+    return IsPushKey(SDL_SCANCODE_END);
 }
 
 int getMaxKey()
